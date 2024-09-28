@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CitasMedicaApp.Domain.Base
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
         public DateTime FechaCreacion { get; set; }
 

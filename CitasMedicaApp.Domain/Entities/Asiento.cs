@@ -1,9 +1,10 @@
-﻿using System;
+﻿using CitasMedicaApp.Domain.Base;
+using System;
 
 
 namespace CitasMedicaApp.Domain.Entities
 {
-    public sealed class Asiento
+    public sealed class Asiento : BaseEntity
     {
        public int IdAsiento { get; set; }  
 
@@ -12,17 +13,6 @@ namespace CitasMedicaApp.Domain.Entities
         public int NumeroPiso { get; set; } 
 
         public int NumeroAsiento { get; set; }
-
-        public DateTime FechaCreacion { get; set; } 
-
-        public DateTime? FechaModificacion { get; set; }    
-
-        public DateTime? UsuarioModificacion { get; set; }  
-
-        public bool Estatus {  get; set; }  
-
-
-
 
 
     }
