@@ -19,7 +19,7 @@ namespace CitasMedicasApp.Persistance.Base
         public BaseRepository(CitaContext citaContext)
         {
             _citaContext = citaContext ?? throw new ArgumentNullException(nameof(citaContext));
-            entities = _citaContext.Set<TEntity>(); // Initialize the DbSet
+            entities = _citaContext.Set<TEntity>(); 
         }
 
         public virtual async Task<OperationRessult> Exists(Expression<Func<TEntity, bool>> filter)
@@ -40,11 +40,11 @@ namespace CitasMedicasApp.Persistance.Base
             OperationRessult result = new OperationRessult();
             try
             {
-                var entity = await entities.FindAsync(id); // Use FindAsync to get entity by ID
+                var entity = await entities.FindAsync(id); 
                 if (entity != null)
                 {
                     result.Success = true;
-                    result.Data = entity; // Store the entity in the result
+                    result.Data = entity; 
                 }
                 else
                 {
@@ -57,7 +57,7 @@ namespace CitasMedicasApp.Persistance.Base
                 result.Success = false;
                 result.Message = ex.Message;
             }
-            return result; // Return the result
+            return result; 
         }
 
         public virtual async Task<OperationRessult> GetAll()
@@ -65,16 +65,16 @@ namespace CitasMedicasApp.Persistance.Base
             OperationRessult result = new OperationRessult();
             try
             {
-                var datos = await entities.ToListAsync(); // Use ToListAsync to retrieve data
+                var datos = await entities.ToListAsync(); 
                 result.Success = true;
-                result.Data = datos; // Store the retrieved data in the result
+                result.Data = datos; 
             }
             catch (Exception ex)
             {
                 result.Success = false;
                 result.Message = $"Ocurrió un error: {ex.Message} al obtener los registros.";
             }
-            return result; // Return the result
+            return result; 
         }
 
         public virtual async Task<OperationRessult> Remove(TEntity entity)
@@ -82,8 +82,8 @@ namespace CitasMedicasApp.Persistance.Base
             OperationRessult result = new OperationRessult();
             try
             {
-                entities.Remove(entity); // Remove the entity
-                await _citaContext.SaveChangesAsync(); // Save changes to the context
+                entities.Remove(entity);
+                await _citaContext.SaveChangesAsync(); 
                 result.Success = true;
                 result.Message = "Entity removida correctamente.";
             }
@@ -92,7 +92,7 @@ namespace CitasMedicasApp.Persistance.Base
                 result.Success = false;
                 result.Message = $"Error removiendo la entidad: {ex.Message}";
             }
-            return result; // Return the result
+            return result; 
         }
 
         public virtual async Task<OperationRessult> Save(TEntity entity)
@@ -100,8 +100,8 @@ namespace CitasMedicasApp.Persistance.Base
             OperationRessult result = new OperationRessult();
             try
             {
-                await entities.AddAsync(entity); // Add the entity
-                await _citaContext.SaveChangesAsync(); // Save changes to the context
+                await entities.AddAsync(entity); 
+                await _citaContext.SaveChangesAsync(); 
                 result.Success = true;
                 result.Message = "Entity guardada correctamente.";
             }
@@ -110,7 +110,7 @@ namespace CitasMedicasApp.Persistance.Base
                 result.Success = false;
                 result.Message = $"Error guardando la entidad: {ex.Message}";
             }
-            return result; // Return the result
+            return result; 
         }
 
         public virtual async Task<OperationRessult> Update(TEntity entity)
@@ -118,7 +118,7 @@ namespace CitasMedicasApp.Persistance.Base
             OperationRessult result = new OperationRessult();
             try
             {
-                entities.Update(entity); // Update the entity
+                entities.Update(entity); 
                 await _citaContext.SaveChangesAsync(); // Guarda los cambios
                 result.Success = true;
                 result.Message = "Entity actualizada.";
