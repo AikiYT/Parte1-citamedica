@@ -36,5 +36,5 @@ namespace CitasMedicasApp.Persistance.Repositories
         {
             throw new NotImplementedException();
         }
-    }            // me falta llenar esto y no solo hacerlo con cita sino con toda las entity
+    }            // me falta llenar esto y no solo hacerlo con cita sino con toda las entity hola
 }
