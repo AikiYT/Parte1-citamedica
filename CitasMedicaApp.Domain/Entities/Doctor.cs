@@ -17,6 +17,8 @@ namespace CitasMedicaApp.Domain.Entities
 
         public string Telefono { get; set; }
 
-        public string CorreoElectronico { get; set; } 
+        public string CorreoElectronico { get; set; }
+        
+        public bool EstaActivo { get; set; }    
     }
 }

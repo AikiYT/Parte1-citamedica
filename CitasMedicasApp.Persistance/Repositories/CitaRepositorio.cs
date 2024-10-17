@@ -11,7 +11,7 @@ namespace CitasMedicasApp.Persistance.Repositories
 {
     public class CitaRepositorio : BaseRepository<Cita>, ICitaRepositorio
     {
-        public CitaRepositorio(CitaContext context) : base(context)
+        public CitaRepositorio(CitaContext citacontext) : base(citacontext)
         {
 
 
@@ -36,5 +36,5 @@ namespace CitasMedicasApp.Persistance.Repositories
         {
             throw new NotImplementedException();
         }
-    }            // me falta llenar esto
+    }            // me falta llenar esto y no solo hacerlo con cita sino con toda las entity
 }

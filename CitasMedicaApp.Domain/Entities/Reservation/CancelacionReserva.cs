@@ -10,7 +10,7 @@ namespace CitasMedicaApp.Domain.Entities.Reservation
     public sealed class CancelacionReserva : BaseEntity
     {
         public int SolicitudReservaId { get; set; }
-        public string MotivoCancelacion { get; set; }
+        public string? MotivoCancelacion { get; set; }
         public DateTime FechaCancelacion { get; set; }
 
         // Relación con SolicitudReserva

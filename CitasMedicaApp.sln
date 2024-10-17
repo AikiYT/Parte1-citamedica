@@ -7,11 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{6BB3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{B03BA299-BF2E-478D-ACFC-3D14AC3D12E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicaApp.Domain", "CitasMedicaApp.Domain\CitasMedicaApp.Domain.csproj", "{06608D4C-9874-453A-9FC2-4B69E7950956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicaApp.Domain", "CitasMedicaApp.Domain\CitasMedicaApp.Domain.csproj", "{06608D4C-9874-453A-9FC2-4B69E7950956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicasApp.Persistance", "CitasMedicasApp.Persistance\CitasMedicasApp.Persistance.csproj", "{18D15060-CFAA-488D-B606-6FE93E5E5150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Persistance", "CitasMedicasApp.Persistance\CitasMedicasApp.Persistance.csproj", "{18D15060-CFAA-488D-B606-6FE93E5E5150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicasApp.Infraestructure", "CitasMedicasApp.Infraestructure\CitasMedicasApp.Infraestructure.csproj", "{2D49F3C6-9A13-43B2-9F1C-F7660719051A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Infraestructure", "CitasMedicasApp.Infraestructure\CitasMedicasApp.Infraestructure.csproj", "{2D49F3C6-9A13-43B2-9F1C-F7660719051A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prueba", "Prueba", "{E567CED0-97CC-4A01-A6DC-3ACD9C4A27AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,7 @@ Global
 		{06608D4C-9874-453A-9FC2-4B69E7950956} = {6BB37FC5-59F8-46A0-9DEC-3F9C04D2B3A6}
 		{18D15060-CFAA-488D-B606-6FE93E5E5150} = {6BB37FC5-59F8-46A0-9DEC-3F9C04D2B3A6}
 		{2D49F3C6-9A13-43B2-9F1C-F7660719051A} = {6BB37FC5-59F8-46A0-9DEC-3F9C04D2B3A6}
+		{E567CED0-97CC-4A01-A6DC-3ACD9C4A27AC} = {B03BA299-BF2E-478D-ACFC-3D14AC3D12E7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E7AAFDA-81F7-4926-93C1-D7E42C2CE4A8}

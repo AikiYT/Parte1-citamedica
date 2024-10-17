@@ -36,7 +36,7 @@ namespace CitasMedicasApp.Persistance.Context
 
         public DbSet<ConfirmacionReserva> confirmacionreserva { get; set; }
 
-        public DbSet<DisponibilidadReserva> disponibilidadReservas { get; set; }
+        public DbSet<DisponibilidadReserva> disponibilidadReservas { get; set; }        
 
         public DbSet<NotificacionReserva> notificacionReservas { get; set; }
 
