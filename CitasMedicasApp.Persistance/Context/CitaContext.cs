@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using CitasMedicaApp.Domain.Entities;
 using CitasMedicaApp.Domain.Entities.Reservation;
 using CitasMedicaApp.Domain.Entities.Security;
+using CitasMedicaApp.Domain.Entities.System;
 using CitasMedicaApp.Domain.Repositories;
+using CitasMedicaApp.Domain.Users;
 using Microsoft.EntityFrameworkCore;
 
 namespace CitasMedicasApp.Persistance.Context
@@ -20,14 +22,14 @@ namespace CitasMedicasApp.Persistance.Context
 
 
         #region "Configuration Entities"
-        public DbSet<Agenda> agendas { get; set; }
+        
           public DbSet<Cita>  citas { get; set; }
 
-        public DbSet<Doctor> doctores { get; set; }
+        public DbSet<Doctors> doctores { get; set; }
 
-         public DbSet<Horario> horarios { get; set; }
+         
 
-        public DbSet<Paciente> pacientes { get; set; }
+        public DbSet<Patients> pacientes { get; set; }
 
         #endregion
 
@@ -46,10 +48,14 @@ namespace CitasMedicasApp.Persistance.Context
 
         #endregion
 
-        #region "Security Entities"
+        #region "System Entities"
 
-        public DbSet<Rol> rols {  get; set; }
+        public DbSet<Rols> rols {  get; set; }
         public DbSet<Usuario> usuarios { get; set; }
+
+        public DbSet<Notifications> notifications { get; set; }
+
+        public DbSet<Status> statuses { get; set; }
 
         #endregion
 

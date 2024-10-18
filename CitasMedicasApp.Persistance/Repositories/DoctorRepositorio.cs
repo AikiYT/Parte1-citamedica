@@ -1,6 +1,7 @@
 ﻿using CitasMedicaApp.Domain.Entities;
 using CitasMedicaApp.Domain.Repositories;
 using CitasMedicaApp.Domain.Result;
+using CitasMedicaApp.Domain.Users;
 using CitasMedicasApp.Persistance.Base;
 using CitasMedicasApp.Persistance.Context;
 using CitasMedicasApp.Persistance.Interface.Configuration;
@@ -13,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace CitasMedicasApp.Persistance.Repositories
 {
-    public sealed class DoctorRepositorio : BaseRepository<Doctor>, IDoctorRepositorio
+    public sealed class DoctorRepositorio : BaseRepository<Doctors>, IDoctorRepositorio
     {
 
 
@@ -21,29 +22,57 @@ namespace CitasMedicasApp.Persistance.Repositories
         {
         }
 
-        public Task<OperationRessult> Exists(Expression<Func<Cita, bool>> filter)
+        public async Task<OperationRessult> Add(Doctors entity)
         {
-            throw new NotImplementedException();
+            return await Save(entity);
         }
-         
-        public Task<OperationRessult> Remove(Cita entity)
+
+        public async Task<OperationRessult> Delete(int id)
+        {
+            var doctor = await GetEntityBy(id);
+            if (doctor.Success && doctor.Data is Doctors entity)
+            {
+                return await Remove(entity);
+            }
+            return new OperationRessult(false, "Doctor no encontrado.");
+        }
+
+        public async Task<OperationRessult> Exists(Expression<Func<Doctors, bool>> filter)
+        {
+            bool exists = await base.Exists(filter);
+            return new OperationRessult(exists, exists ? "Doctor existe." : "Doctor no existe.");
+        }
+
+        public async Task<Doctors> GetById(int id)
+        {
+            var result = await GetEntityBy(id);
+            return result.Data as Doctors;
+        }
+
+        public async Task<OperationRessult> Remove(Doctors entity)
+        {
+            return await base.Remove(entity);
+        }
+
+        public async Task<OperationRessult> Save(Doctors entity)
+        {
+            return await base.Save(entity);
+        }
+
+        public async Task<OperationRessult> Update(Doctors entity)
+        {
+            return await base.Update(entity);
+        }
+
+        Task<bool> IBaseRepository<Doctors>.Exists(Expression<Func<Doctors, bool>> filter)
         {
             throw new NotImplementedException();
         }
 
-        public Task<OperationRessult> Save(Cita entity)
+         async Task<IEnumerable<Doctors>> IDoctorRepositorio.GetAll()
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<OperationRessult> Update(Cita entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<bool> IBaseRepository<Cita>.Exists(Expression<Func<Cita, bool>> filter)
-        {
-            throw new NotImplementedException();
+            var result = await base.GetAll();
+            return result.Data as List<Doctors>;
         }
     }
 }

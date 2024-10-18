@@ -19,8 +19,8 @@ namespace CitasMedicaApp.Domain.Repositories
 
         Task<OperationRessult> GetEntityBy(int Id);
 
-        Task<OperationRessult> Exists(Expression<Func<TEntity, bool>> filter);
-        Task<OperationRessult> GetAll();
         Task<bool> Exists(Expression<Func<TEntity, bool>> filter);
+        Task<OperationRessult> GetAll();
+        
     }
 }

@@ -11,9 +11,9 @@ namespace CitasMedicaApp.Domain.Entities.Reservation
     {
         public int IdDoctor { get; set; }
         public DateTime FechaDisponible { get; set; }
-        public string HorasDisponibles { get; set; } 
+        public string? HorasDisponibles { get; set; } 
 
         // Relación con Doctor
-        public Doctor Doctor { get; set; }
+        public Doctors Doctor { get; set; }
     }
 }

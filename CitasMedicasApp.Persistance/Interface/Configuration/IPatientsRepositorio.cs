@@ -10,12 +10,13 @@ using CitasMedicaApp.Domain.Users;
 
 namespace CitasMedicasApp.Persistance.Interface.Configuration
 {
-    public interface  ICitaRepositorio : IBaseRepository<Cita>
+    public interface IPatientsRepositorio : IBaseRepository<Patients>
     {
-        Task<OperationRessult> Add(Cita entity);
-        Task<OperationRessult> Update(Cita entity);
+        Task<OperationRessult> Add(Patients entity);
+        Task<OperationRessult> Update(Patients entity);
         Task<OperationRessult> Delete(int id);
-        Task<Cita> GetById(int id);
-        Task<IEnumerable<Cita>> GetAll();
+        Task<Patients> GetById(int id);
+        Task<IEnumerable<Patients>> GetAll();
+
     }
 }

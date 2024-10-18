@@ -11,7 +11,7 @@ namespace CitasMedicaApp.Domain.Entities.Reservation
     {
         public int SolicitudReservaId { get; set; }
         public DateTime FechaRecordatorio { get; set; }
-        public string Mensaje { get; set; }
+        public string? Mensaje { get; set; }
 
         
         public SolicitudReserva SolicitudReserva { get; set; } // Relación con SolicitudReserva

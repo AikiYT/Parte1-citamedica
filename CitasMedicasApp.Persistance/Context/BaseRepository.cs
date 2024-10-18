@@ -143,10 +143,7 @@ namespace CitasMedicasApp.Persistance.Base
             throw new NotImplementedException();
         }
 
-        Task<OperationRessult> IBaseRepository<TEntity>.Exists(Expression<Func<TEntity, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
 

@@ -3,6 +3,7 @@
 using CitasMedicaApp.Domain.Entities;
 using CitasMedicaApp.Domain.Repositories;
 using CitasMedicaApp.Domain.Result;
+using CitasMedicaApp.Domain.Users;
 using CitasMedicasApp.Persistance.Base;
 using CitasMedicasApp.Persistance.Context;
 using CitasMedicasApp.Persistance.Interface.Configuration;
