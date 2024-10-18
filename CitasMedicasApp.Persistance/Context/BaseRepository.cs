@@ -22,17 +22,19 @@ namespace CitasMedicasApp.Persistance.Base
             entities = _citaContext.Set<TEntity>(); 
         }
 
-        public virtual async Task<OperationRessult> Exists(Expression<Func<TEntity, bool>> filter)
+        public virtual async Task<bool> Exists(Expression<Func<TEntity, bool>> filter)
         {
-            try
-            {
-                bool exists = await entities.AnyAsync(filter);
-                return new OperationRessult { Success = true, Message = "Exists: " + exists };
-            }
-            catch (Exception ex)
-            {
-                return new OperationRessult { Success = false, Message = ex.Message };
-            }
+           // if (await entities.CountAsync(filter) > 0)
+         //   { 
+
+          //  }
+           // if (await entities.Where(filter).CountAsync() > 0)
+         //   {
+
+          //  }
+
+            return await this.entities.AnyAsync(filter);
+
         }
 
         public virtual async Task<OperationRessult> GetEntityBy(int id)
@@ -137,6 +139,11 @@ namespace CitasMedicasApp.Persistance.Base
         }
 
         internal void Update(object entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<OperationRessult> IBaseRepository<TEntity>.Exists(Expression<Func<TEntity, bool>> filter)
         {
             throw new NotImplementedException();
         }
