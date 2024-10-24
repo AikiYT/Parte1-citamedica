@@ -7,11 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{6BB3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{B03BA299-BF2E-478D-ACFC-3D14AC3D12E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicaApp.Domain", "CitasMedicaApp.Domain\CitasMedicaApp.Domain.csproj", "{06608D4C-9874-453A-9FC2-4B69E7950956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicaApp.Domain", "CitasMedicaApp.Domain\CitasMedicaApp.Domain.csproj", "{06608D4C-9874-453A-9FC2-4B69E7950956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicasApp.Persistance", "CitasMedicasApp.Persistance\CitasMedicasApp.Persistance.csproj", "{18D15060-CFAA-488D-B606-6FE93E5E5150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Persistance", "CitasMedicasApp.Persistance\CitasMedicasApp.Persistance.csproj", "{18D15060-CFAA-488D-B606-6FE93E5E5150}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicasApp.Infraestructure", "CitasMedicasApp.Infraestructure\CitasMedicasApp.Infraestructure.csproj", "{2D49F3C6-9A13-43B2-9F1C-F7660719051A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Infraestructure", "CitasMedicasApp.Infraestructure\CitasMedicasApp.Infraestructure.csproj", "{2D49F3C6-9A13-43B2-9F1C-F7660719051A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C69423FD-BFCC-47DA-A353-71D7FCB8DA92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicas.Reservation.Api", "CitasMedicas.Citas.API\CitasMedicas.Reservation.Api.csproj", "{A4B9D968-10B6-4065-AAF2-67933ABD2514}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicas.System.Api", "CitasMedicas.Systema.API\CitasMedicas.System.Api.csproj", "{BCC6DF79-C055-4D5E-8017-1F837BD469F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicas.Medical.Api", "CitasMedicas.Medical.Api\CitasMedicas.Medical.Api.csproj", "{6644E996-F1BD-4D76-A71E-9D93DE5C3092}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicas.Insurance.Api", "CitasMedicas.Seguros.Api\CitasMedicas.Insurance.Api.csproj", "{4E95DC70-9FBA-4BE2-9936-2BAC435C4ADD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicas.Users.Api", "CitasMedicas.Usuarios.API\CitasMedicas.Users.Api.csproj", "{F3E35774-9512-4B76-974C-BB211627F918}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +43,26 @@ Global
 		{2D49F3C6-9A13-43B2-9F1C-F7660719051A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D49F3C6-9A13-43B2-9F1C-F7660719051A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D49F3C6-9A13-43B2-9F1C-F7660719051A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B9D968-10B6-4065-AAF2-67933ABD2514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B9D968-10B6-4065-AAF2-67933ABD2514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B9D968-10B6-4065-AAF2-67933ABD2514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B9D968-10B6-4065-AAF2-67933ABD2514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC6DF79-C055-4D5E-8017-1F837BD469F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC6DF79-C055-4D5E-8017-1F837BD469F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC6DF79-C055-4D5E-8017-1F837BD469F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC6DF79-C055-4D5E-8017-1F837BD469F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6644E996-F1BD-4D76-A71E-9D93DE5C3092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6644E996-F1BD-4D76-A71E-9D93DE5C3092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6644E996-F1BD-4D76-A71E-9D93DE5C3092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6644E996-F1BD-4D76-A71E-9D93DE5C3092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E95DC70-9FBA-4BE2-9936-2BAC435C4ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E95DC70-9FBA-4BE2-9936-2BAC435C4ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E95DC70-9FBA-4BE2-9936-2BAC435C4ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E95DC70-9FBA-4BE2-9936-2BAC435C4ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3E35774-9512-4B76-974C-BB211627F918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3E35774-9512-4B76-974C-BB211627F918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3E35774-9512-4B76-974C-BB211627F918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3E35774-9512-4B76-974C-BB211627F918}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +71,11 @@ Global
 		{06608D4C-9874-453A-9FC2-4B69E7950956} = {6BB37FC5-59F8-46A0-9DEC-3F9C04D2B3A6}
 		{18D15060-CFAA-488D-B606-6FE93E5E5150} = {6BB37FC5-59F8-46A0-9DEC-3F9C04D2B3A6}
 		{2D49F3C6-9A13-43B2-9F1C-F7660719051A} = {6BB37FC5-59F8-46A0-9DEC-3F9C04D2B3A6}
+		{A4B9D968-10B6-4065-AAF2-67933ABD2514} = {C69423FD-BFCC-47DA-A353-71D7FCB8DA92}
+		{BCC6DF79-C055-4D5E-8017-1F837BD469F0} = {C69423FD-BFCC-47DA-A353-71D7FCB8DA92}
+		{6644E996-F1BD-4D76-A71E-9D93DE5C3092} = {C69423FD-BFCC-47DA-A353-71D7FCB8DA92}
+		{4E95DC70-9FBA-4BE2-9936-2BAC435C4ADD} = {C69423FD-BFCC-47DA-A353-71D7FCB8DA92}
+		{F3E35774-9512-4B76-974C-BB211627F918} = {C69423FD-BFCC-47DA-A353-71D7FCB8DA92}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E7AAFDA-81F7-4926-93C1-D7E42C2CE4A8}
