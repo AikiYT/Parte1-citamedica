@@ -16,21 +16,20 @@ namespace CitasMedicasApp.Persistance.Context
     public partial class CitaContext : DbContext  // este es un objeto principal para conectar la base de datos con el entity framework
     {
         public CitaContext(DbContextOptions<CitaContext> options) : base(options) { }  // este contexto que puse aqui lo esta heredando de la clase base el padre esto nos permite usar cualquier gestor de base de datos
-       
         
-    // aqui va un metodo con la conexion al sql pero aun no la tenemos
-            
-        
-        
+        // aqui va un metodo con la conexion al sql pero aun no la tenemos
+
+
+
         #region "Configuration Entities"
-        public DbSet<Agenda> agendas { get; set; }
+        
           public DbSet<Cita>  citas { get; set; }
 
-        public DbSet<Doctor> doctores { get; set; }
+        public DbSet<Doctors> doctores { get; set; }
 
-         public DbSet<Horario> horarios { get; set; }
+         
 
-        public DbSet<Paciente> pacientes { get; set; }
+        public DbSet<Patients> pacientes { get; set; }
 
         #endregion
 
@@ -39,7 +38,7 @@ namespace CitasMedicasApp.Persistance.Context
 
         public DbSet<ConfirmacionReserva> confirmacionreserva { get; set; }
 
-        public DbSet<DisponibilidadReserva> disponibilidadReservas { get; set; }
+        public DbSet<DisponibilidadReserva> disponibilidadReservas { get; set; }        
 
         public DbSet<NotificacionReserva> notificacionReservas { get; set; }
 
@@ -49,10 +48,14 @@ namespace CitasMedicasApp.Persistance.Context
 
         #endregion
 
-        #region "Security Entities"
+        #region "System Entities"
 
-        public DbSet<Rol> rols {  get; set; }
+        public DbSet<Rols> rols {  get; set; }
         public DbSet<Usuario> usuarios { get; set; }
+
+        public DbSet<Notifications> notifications { get; set; }
+
+        public DbSet<Status> statuses { get; set; }
 
         #endregion
 
