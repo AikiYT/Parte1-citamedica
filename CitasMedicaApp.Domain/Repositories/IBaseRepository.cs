@@ -15,12 +15,12 @@ namespace CitasMedicaApp.Domain.Repositories
         Task<OperationRessult> Remove(TEntity entity);
 
         List<OperationRessult> GettAll();
+        // tambien puedo crear otro getAll pero en el paremetro debo especificarle que quiero obtener
 
         Task<OperationRessult> GetEntityBy(int Id);
 
-        Task<OperationRessult> Exists(Expression<Func<TEntity, bool>> filter);
-
-
-
+        Task<bool> Exists(Expression<Func<TEntity, bool>> filter);
+        Task<OperationRessult> GetAll();
+        
     }
 }

@@ -16,5 +16,9 @@ namespace CitasMedicaApp.Domain.Base
 
         public bool Estatus { get; set; }
 
+        public DateTime CreateAt { get; set; }
+
+        public DateTime UpdateAt { get; set; }
+
     }
 }

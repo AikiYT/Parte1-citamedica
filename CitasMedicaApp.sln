@@ -12,6 +12,7 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Persistance", "CitasMedicasApp.Persistance\CitasMedicasApp.Persistance.csproj", "{18D15060-CFAA-488D-B606-6FE93E5E5150}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Infraestructure", "CitasMedicasApp.Infraestructure\CitasMedicasApp.Infraestructure.csproj", "{2D49F3C6-9A13-43B2-9F1C-F7660719051A}"
+<<<<<<< HEAD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C69423FD-BFCC-47DA-A353-71D7FCB8DA92}"
 EndProject
@@ -24,6 +25,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicas.Insurance.Api", "CitasMedicas.Seguros.Api\CitasMedicas.Insurance.Api.csproj", "{4E95DC70-9FBA-4BE2-9936-2BAC435C4ADD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicas.Users.Api", "CitasMedicas.Usuarios.API\CitasMedicas.Users.Api.csproj", "{F3E35774-9512-4B76-974C-BB211627F918}"
+=======
+>>>>>>> 1530b0a1c48375fb6c4d82dee10ac360fa7f7eb6
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
