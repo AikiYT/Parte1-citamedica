@@ -11,8 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicaApp.Domain", "Ci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Persistance", "CitasMedicasApp.Persistance\CitasMedicasApp.Persistance.csproj", "{18D15060-CFAA-488D-B606-6FE93E5E5150}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CitasMedicasApp.Infraestructure", "CitasMedicasApp.Infraestructure\CitasMedicasApp.Infraestructure.csproj", "{2D49F3C6-9A13-43B2-9F1C-F7660719051A}"
-<<<<<<< HEAD
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CitasMedicasApp.Infraestructure", "CitasMedicasApp.Infraestructure\CitasMedicasApp.Infraestructure.csproj", "{2D49F3C6-9A13-43B2-9F1C-F7660719051A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C69423FD-BFCC-47DA-A353-71D7FCB8DA92}"
 EndProject
